@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Quiz App</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+  </head>
+<body>
+  <header>
+  <h1>Logan's Quiz</h1>
+  </header>
+    <h2>Welcome to the quiz!</h2>
+    <button class="startQuiz">Start Quiz</button>
+
+<main>
+
+  <form class="formOne">
+  <fieldset>
+
+      <legend>${STORE.questions[STORE.questionNumber].question}</legend>
+  
+      <input type="radio" name="answer" value="${STORE.questions[STORE.questionNumber].answers[0]}">
+      <label for="answer">${STORE.questions[STORE.questionNumber].answers[0]}</label><br/>
+      <input type="radio" name="answer" value="${STORE.questions[STORE.questionNumber].answers[1]}">
+      <label for="answer">${STORE.questions[STORE.questionNumber].answers[1]}</label><br/>
+      <input type="radio" name="answer" value="${STORE.questions[STORE.questionNumber].answers[2]}">
+      <label for="answer">${STORE.questions[STORE.questionNumber].answers[2]}</label><br/>
+      <input type="radio" name="answer" value="${STORE.questions[STORE.questionNumber].answers[3]}">
+      <label for="answer">${STORE.questions[STORE.questionNumber].answers[3]}</label><br/>
+  </fieldset>
+  <button type="submit">Submit</button>
+  
+  </main>
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.js"
+    crossorigin="anonymous"
+  ></script>
+
+  <script src="RcheckAnswersScript.js"></script>
+  <script src="renderQuestionsPage.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
+</form>
+
+</body>
